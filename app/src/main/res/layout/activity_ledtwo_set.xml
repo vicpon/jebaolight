@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="#ffffffff" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.example.wifizhilian.view.PageHead n1:id="@id/LedTwoSetpageHead" n1:layout_width="fill_parent" n1:layout_height="@dimen/pagehead_height" />
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:textSize="@dimen/date_font_size" n1:layout_gravity="center_horizontal" n1:id="@id/DatetextView" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:text="TextView" />
+        <TextView n1:textSize="@dimen/time_font_size" n1:textColor="#ff33cc33" n1:layout_gravity="center_horizontal" n1:id="@id/TimetextView" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="10.0dip" n1:text="TextView" />
+        <LinearLayout n1:background="#ff99e699" n1:layout_width="fill_parent" n1:layout_height="4.0dip" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center_vertical" n1:layout_gravity="center_horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/genborder_padding_margin">
+        <ImageView n1:layout_gravity="center_vertical" n1:id="@id/LeftimageView" n1:clickable="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/icon_left" n1:onClick="BntClick" />
+        <RelativeLayout n1:layout_width="@dimen/day_textview_width" n1:layout_height="wrap_content">
+            <ImageView n1:id="@id/SmallimageView" n1:layout_width="wrap_content" n1:layout_height="@dimen/small_logo_size" n1:src="@drawable/quick_set_small" n1:scaleType="fitCenter" />
+        </RelativeLayout>
+        <ImageView n1:layout_gravity="center_vertical" n1:id="@id/RighthimageView" n1:clickable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/icon_right" n1:onClick="BntClick" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:textAppearance="?android:textAppearanceLarge" n1:layout_gravity="center_horizontal" n1:id="@id/DaytextView" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Large Text" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="vertical" n1:id="@id/LineGraphicLayout" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <com.example.wifizhilian.view.LineGraphicView n1:id="@id/SetlineGraphicView" n1:background="#ffffffff" n1:layout_width="fill_parent" n1:layout_height="@dimen/linegraphic_height" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center_horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/genborder_padding_margin">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="0.5">
+            <Button n1:layout_gravity="center_horizontal" n1:id="@id/Savebutton" n1:background="@drawable/bnt_bg1" n1:layout_width="@dimen/bnt_twop_width" n1:layout_height="@dimen/bnt_twop_height" n1:text="@string/bnt_submit" n1:onClick="BntClick" />
+        </LinearLayout>
+        <LinearLayout n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="0.5">
+            <Button n1:layout_gravity="center_horizontal" n1:id="@id/Runbutton" n1:background="@drawable/bnt_bg1" n1:layout_width="@dimen/bnt_twop_width" n1:layout_height="@dimen/bnt_twop_height" n1:text="@string/bnt_run" n1:onClick="BntClick" />
+        </LinearLayout>
+        <LinearLayout n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="0.5">
+            <Button n1:layout_gravity="center_horizontal" n1:id="@id/Deletebutton" n1:background="@drawable/bnt_bg2" n1:layout_width="@dimen/bnt_twop_width" n1:layout_height="@dimen/bnt_twop_height" n1:text="@string/bnt_delete" n1:onClick="BntClick" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

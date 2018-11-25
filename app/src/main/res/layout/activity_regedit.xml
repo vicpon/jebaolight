@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.example.wifizhilian.view.PageHead n1:id="@+id/RegeditpageHead" n1:layout_width="fill_parent" n1:layout_height="@dimen/pagehead_height" n1:layout_alignParentLeft="true" n1:layout_alignParentTop="true" />
+    <LinearLayout n1:orientation="vertical" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingTop="@dimen/activity_vertical_margin" n1:paddingRight="@dimen/activity_horizontal_margin" n1:paddingBottom="@dimen/activity_vertical_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="20.0dip" n1:layout_below="@+id/RegeditpageHead">
+        <TextView n1:textSize="@dimen/login_lable_fontsize" n1:id="@+id/DaytextView" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/lable_regedit_nikename" />
+        <EditText n1:id="@+id/NikeNameeditText" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:ems="10" n1:singleLine="true" />
+        <TextView n1:textSize="@dimen/login_lable_fontsize" n1:id="@+id/AccounttextView" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/lable_regedit_newpass" />
+        <EditText n1:id="@+id/NewPwdeditText" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:ems="10" n1:singleLine="true" n1:inputType="textPassword" />
+        <TextView n1:textSize="@dimen/login_lable_fontsize" n1:id="@+id/AppVertextView" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/lable_regedit_repass" />
+        <EditText n1:id="@+id/RePwdeditText" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:ems="10" n1:singleLine="true" n1:inputType="textPassword" />
+        <TextView n1:textSize="@dimen/login_lable_fontsize" n1:id="@+id/textView4" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/lable_regedit_email" />
+        <EditText n1:id="@+id/EmaileditText" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:ems="10" n1:singleLine="true" />
+        <Button n1:textSize="@dimen/login_lable_fontsize" n1:id="@+id/RegeditRunbutton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/bnt_regedit_over" n1:onClick="BntClick" />
+    </LinearLayout>
+</RelativeLayout>

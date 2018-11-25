@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true">
+        <ImageView n1:id="@+id/IconimageView" n1:clickable="true" n1:layout_width="@dimen/pagehead_icon_size" n1:layout_height="@dimen/pagehead_icon_size" n1:src="@drawable/menu_2" />
+        <TextView n1:textSize="@dimen/pagetitle_font_size" n1:textColor="@android:color/white" n1:layout_gravity="center_vertical" n1:id="@+id/TitletextView" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:text="Title" />
+    </LinearLayout>
+</RelativeLayout>

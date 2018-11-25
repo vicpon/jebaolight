@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:id="@+id/ProgressValtextView" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="0%" />
+    </LinearLayout>
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:layout_width="fill_parent" n1:layout_height="@dimen/lineprogress_line_height" n1:layout_centerVertical="true">
+            <ImageView n1:id="@+id/LineLeftimageView" n1:layout_width="@dimen/lineprogress_line_radius" n1:layout_height="@dimen/lineprogress_line_height" n1:layout_marginLeft="5.0dip" n1:src="@drawable/progress_line_left" n1:scaleType="fitXY" />
+            <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+                <ImageView n1:id="@+id/ProgLineimageView" n1:layout_width="fill_parent" n1:layout_height="@dimen/lineprogress_line_height" n1:src="@drawable/progress_line_1" n1:scaleType="fitXY" n1:layout_weight="1.0" />
+                <ImageView n1:id="@+id/ProgLineBgimageView" n1:layout_width="fill_parent" n1:layout_height="@dimen/lineprogress_line_height" n1:src="@drawable/progress_line" n1:scaleType="fitXY" n1:layout_weight="1.0" />
+            </RelativeLayout>
+            <ImageView n1:id="@+id/LineRightimageView" n1:layout_width="@dimen/lineprogress_line_radius" n1:layout_height="@dimen/lineprogress_line_height" n1:layout_marginRight="5.0dip" n1:src="@drawable/progress_line_right" n1:scaleType="fitXY" />
+        </LinearLayout>
+        <ImageView n1:id="@+id/DotimageView" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/dot_bg_4" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

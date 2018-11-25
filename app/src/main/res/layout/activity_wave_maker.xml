@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@+id/textView1"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.example.wifizhilian.view.PageHead n1:id="@+id/WaveMakerPageHead" n1:layout_width="fill_parent" n1:layout_height="@dimen/pagehead_height" />
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:id="@+id/PumpTopBntLayout" n1:background="@drawable/border_bottom_grey" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <LinearLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content" style="@style/DivideLayout">
+                <ImageButton n1:id="@+id/TopimageButton1" n1:layout_width="@dimen/pump_button_size" n1:layout_height="@dimen/pump_button_size" n1:src="@drawable/pump_t11" n1:onClick="ButtonClick" style="@style/StyleWaveMakerIcon" />
+            </LinearLayout>
+            <LinearLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content" style="@style/DivideLayout">
+                <ImageButton n1:id="@+id/TopimageButton2" n1:layout_width="@dimen/pump_button_size" n1:layout_height="@dimen/pump_button_size" n1:src="@drawable/pump_t21" n1:onClick="ButtonClick" style="@style/StyleWaveMakerIcon" />
+            </LinearLayout>
+            <LinearLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content" style="@style/DivideLayout">
+                <ImageButton n1:id="@+id/TopimageButton3" n1:layout_width="@dimen/pump_button_size" n1:layout_height="@dimen/pump_button_size" n1:src="@drawable/pump_t31" n1:onClick="ButtonClick" style="@style/StyleWaveMakerIcon" />
+            </LinearLayout>
+            <LinearLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content" style="@style/DivideLayout">
+                <ImageButton n1:id="@+id/TopimageButton4" n1:layout_width="@dimen/pump_button_size" n1:layout_height="@dimen/pump_button_size" n1:src="@drawable/pump_t41" n1:onClick="ButtonClick" style="@style/StyleWaveMakerIcon" />
+            </LinearLayout>
+            <LinearLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content" style="@style/DivideLayout">
+                <ImageButton n1:id="@+id/TopimageButton5" n1:layout_width="@dimen/pump_button_size" n1:layout_height="@dimen/pump_button_size" n1:src="@drawable/pump_t51" n1:onClick="ButtonClick" style="@style/StyleWaveMakerIcon" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout n1:id="@+id/PumpBottomBntLayout" n1:background="@drawable/border_top_grey" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentBottom="true">
+            <LinearLayout n1:layout_width="wrap_content" n1:layout_height="fill_parent" style="@style/DivideLayout">
+                <Button n1:id="@+id/Bottombutton1" n1:layout_width="@dimen/pump_button_size" n1:layout_height="wrap_content" n1:text="@string/bnt_pumpb1_title" n1:onClick="ButtonClick" style="@style/StyleWaveMakerBottomBnt" />
+            </LinearLayout>
+            <LinearLayout n1:layout_width="wrap_content" n1:layout_height="fill_parent" style="@style/DivideLayout">
+                <Button n1:id="@+id/Bottombutton2" n1:layout_width="@dimen/pump_button_size" n1:layout_height="wrap_content" n1:text="@string/bnt_pumpb2_title" n1:onClick="ButtonClick" style="@style/StyleWaveMakerBottomBnt" />
+            </LinearLayout>
+            <LinearLayout n1:layout_width="wrap_content" n1:layout_height="fill_parent" style="@style/DivideLayout">
+                <Button n1:id="@+id/Bottombutton3" n1:layout_width="@dimen/pump_button_size" n1:layout_height="wrap_content" n1:text="@string/bnt_pumpb3_title" n1:onClick="ButtonClick" style="@style/StyleWaveMakerBottomBnt" />
+            </LinearLayout>
+            <LinearLayout n1:layout_width="wrap_content" n1:layout_height="fill_parent" style="@style/DivideLayout">
+                <Button n1:id="@+id/Bottombutton4" n1:layout_width="@dimen/pump_button_size" n1:layout_height="wrap_content" n1:text="@string/bnt_pumpb4_title" n1:onClick="ButtonClick" style="@style/StyleWaveMakerBottomBnt" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_above="@+id/PumpBottomBntLayout" n1:layout_below="@+id/PumpTopBntLayout" n1:layout_alignParentLeft="true">
+            <include n1:id="@+id/PagePumpMode1" n1:visibility="gone" layout="@layout/page_pump_mode1" />
+            <include n1:id="@+id/PagePumpMode2" n1:visibility="gone" layout="@layout/page_pump_mode2" />
+            <include n1:id="@+id/PagePumpMode3" n1:visibility="gone" layout="@layout/page_pump_mode3" />
+            <include n1:id="@+id/PagePumpMode4" n1:visibility="gone" layout="@layout/page_pump_mode4" />
+            <include n1:id="@+id/PagePumpMode5" n1:visibility="gone" layout="@layout/page_pump_mode5" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

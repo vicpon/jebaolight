@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="20.0dip" n1:layout_marginRight="20.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="?android:textAppearanceLarge" n1:layout_gravity="center_horizontal" n1:id="@+id/textView1" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/lable_pumpstr_master" />
+    <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <com.example.wifizhilian.view.ButtomAtDel n1:id="@+id/Groupbutton1" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="0.1" style="@style/StylePumpGroupBnt" n2:icon_size="@dimen/pump_buttongroupicon_size" n2:opt_size="@dimen/pump_buttongroupopt_size" xmlns:n2="http://schemas.android.com/apk/res" />
+        <com.example.wifizhilian.view.ButtomAtDel n1:id="@+id/Groupbutton2" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="0.1" style="@style/StylePumpGroupBnt" n3:icon_size="@dimen/pump_buttongroupicon_size" n3:opt_size="@dimen/pump_buttongroupopt_size" xmlns:n3="http://schemas.android.com/apk/res" />
+    </LinearLayout>
+    <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <com.example.wifizhilian.view.ButtomAtDel n1:id="@+id/Groupbutton3" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="0.1" style="@style/StylePumpGroupBnt" n4:icon_size="@dimen/pump_buttongroupicon_size" n4:opt_size="@dimen/pump_buttongroupopt_size" xmlns:n4="http://schemas.android.com/apk/res" />
+        <com.example.wifizhilian.view.ButtomAtDel n1:id="@+id/Groupbutton4" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="0.1" style="@style/StylePumpGroupBnt" n5:icon_size="@dimen/pump_buttongroupicon_size" n5:opt_size="@dimen/pump_buttongroupopt_size" xmlns:n5="http://schemas.android.com/apk/res" />
+    </LinearLayout>
+    <RelativeLayout n1:background="@color/font_gray" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+    <TextView n1:textAppearance="?android:textAppearanceLarge" n1:layout_gravity="center_horizontal" n1:id="@+id/textView2" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/lable_pumpstr_slave" />
+    <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <com.example.wifizhilian.view.ButtomAtDel n1:id="@+id/Groupbutton5" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="0.1" style="@style/StylePumpGroupBnt" n6:icon_size="@dimen/pump_buttongroupicon_size" n6:opt_size="@dimen/pump_buttongroupopt_size" xmlns:n6="http://schemas.android.com/apk/res" />
+        <com.example.wifizhilian.view.ButtomAtDel n1:id="@+id/Groupbutton6" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="0.1" style="@style/StylePumpGroupBnt" n7:icon_size="@dimen/pump_buttongroupicon_size" n7:opt_size="@dimen/pump_buttongroupopt_size" xmlns:n7="http://schemas.android.com/apk/res" />
+    </LinearLayout>
+    <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <com.example.wifizhilian.view.ButtomAtDel n1:id="@+id/Groupbutton7" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="0.1" style="@style/StylePumpGroupBnt" n8:icon_size="@dimen/pump_buttongroupicon_size" n8:opt_size="@dimen/pump_buttongroupopt_size" xmlns:n8="http://schemas.android.com/apk/res" />
+        <com.example.wifizhilian.view.ButtomAtDel n1:id="@+id/Groupbutton8" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="0.1" style="@style/StylePumpGroupBnt" n9:icon_size="@dimen/pump_buttongroupicon_size" n9:opt_size="@dimen/pump_buttongroupopt_size" xmlns:n9="http://schemas.android.com/apk/res" />
+    </LinearLayout>
+</LinearLayout>

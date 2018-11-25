@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="20.0dip" n1:layout_marginTop="20.0dip" n1:layout_marginRight="20.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="@dimen/settitle_font_size" n1:id="@+id/textView1" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/lable_pumpstr_nightset" />
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip">
+        <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip">
+            <TextView n1:id="@+id/textView2" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/lable_pumpstr_starttime" n1:layout_weight="1.0" />
+            <Button n1:id="@+id/StartTimeButton" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="" n1:drawableRight="@drawable/icon_bottom_triangle" n1:layout_weight="2.0" n1:onClick="ButtonClick" style="?android:buttonStyleSmall" />
+        </LinearLayout>
+        <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip">
+            <TextView n1:id="@+id/textView3" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/lable_pumpstr_endtime" n1:layout_weight="1.0" />
+            <Button n1:id="@+id/EndTimeButton" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="" n1:drawableRight="@drawable/icon_bottom_triangle" n1:layout_weight="2.0" n1:onClick="ButtonClick" style="?android:buttonStyleSmall" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView n1:textSize="@dimen/settitle_font_size" n1:id="@+id/textView4" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:text="@string/lable_pumpstr_feedset" />
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip">
+        <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:id="@+id/textView5" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/lable_pumpstr_pausetime" n1:layout_weight="15.0" />
+            <Button n1:id="@+id/PauseTimeButton" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="" n1:drawableRight="@drawable/icon_bottom_triangle" n1:layout_weight="15.0" n1:onClick="ButtonClick" style="?android:buttonStyleSmall" />
+            <TextView n1:id="@+id/textView8" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/lable_pumpstr_minute" n1:layout_weight="6.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip">
+        <TextView n1:textSize="@dimen/settitle_font_size" n1:id="@+id/textView6" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/lable_pumpstr_rename" n1:layout_weight="1.0" />
+        <EditText n1:textSize="@dimen/input_font_size" n1:id="@+id/ReNameeditText" n1:layout_width="0.0dip" n1:layout_height="@dimen/input_box_height" n1:ems="10" n1:layout_weight="2.0" />
+    </LinearLayout>
+    <Button n1:id="@+id/UnHerBindbutton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:text="@string/bnt_unbind_her" n1:onClick="ButtonClick" style="?android:buttonStyleSmall" />
+</LinearLayout>

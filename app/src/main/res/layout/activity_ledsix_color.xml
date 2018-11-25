@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:weightSum="1.0"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.example.wifizhilian.view.PageHead n1:id="@+id/LedTwopageHead" n1:layout_width="fill_parent" n1:layout_height="@dimen/pagehead_height" />
+    <TabHost n1:id="@+id/Maintabhost" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginTop="10.0dip" n1:layout_weight="1.11">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <TabWidget n1:id="@android:id/tabs" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:divider="@drawable/ht" />
+            <LinearLayout n1:orientation="vertical" n1:background="#ff99e699" n1:layout_width="fill_parent" n1:layout_height="4.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginBottom="10.0dip" />
+            <FrameLayout n1:id="@android:id/tabcontent" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+                <LinearLayout n1:orientation="vertical" n1:id="@+id/widget_layout_one" n1:paddingLeft="40.0dip" n1:paddingRight="40.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                        <LinearLayout n1:id="@+id/ModelSelectLayout" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                            <Button n1:textSize="@dimen/mode_button_fontsize" n1:id="@+id/button_custom" n1:layout_width="wrap_content" n1:layout_height="@dimen/mode_button_size" n1:text="@string/bnt_custom_title" n1:layout_weight="1.0" n1:onClick="BntClick" />
+                            <Button n1:textSize="@dimen/mode_button_fontsize" n1:id="@+id/button_m1" n1:layout_width="wrap_content" n1:layout_height="@dimen/mode_button_size" n1:text="@string/bnt_m1_title" n1:layout_weight="1.0" n1:onClick="BntClick" />
+                            <Button n1:textSize="@dimen/mode_button_fontsize" n1:id="@+id/button_m2" n1:layout_width="wrap_content" n1:layout_height="@dimen/mode_button_size" n1:text="@string/bnt_m2_title" n1:layout_weight="1.0" n1:onClick="BntClick" />
+                            <Button n1:textSize="@dimen/mode_button_fontsize" n1:id="@+id/button_m3" n1:layout_width="wrap_content" n1:layout_height="@dimen/mode_button_size" n1:text="@string/bnt_m3_title" n1:layout_weight="1.0" n1:onClick="BntClick" />
+                            <Button n1:textSize="@dimen/mode_button_fontsize" n1:id="@+id/button_m4" n1:layout_width="wrap_content" n1:layout_height="@dimen/mode_button_size" n1:text="@string/bnt_m4_title" n1:layout_weight="1.0" n1:onClick="BntClick" />
+                            <Button n1:textSize="@dimen/mode_button_fontsize" n1:id="@+id/button_m5" n1:layout_width="wrap_content" n1:layout_height="@dimen/mode_button_size" n1:text="@string/bnt_m5_title" n1:layout_weight="1.0" n1:onClick="BntClick" />
+                        </LinearLayout>
+                        <LinearLayout n1:orientation="vertical" n1:id="@+id/CustomProgressLayout" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@+id/ModelSelectLayout">
+                            <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip">
+                                <ImageView n1:layout_gravity="bottom" n1:id="@+id/LeftimageView" n1:layout_width="@dimen/ledprogress_lefttag_size" n1:layout_height="@dimen/ledprogress_lefttag_size" n1:src="@drawable/sunlight_2" />
+                                <com.example.wifizhilian.view.LineProgressObj n1:id="@+id/WhitelineProgress" n1:paddingLeft="10.0dip" n1:paddingRight="10.0dip" n1:layout_width="wrap_content" n1:layout_height="@dimen/ledprogress_height" n1:layout_marginLeft="10.0dip" />
+                            </LinearLayout>
+                            <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/ledprogress_margin_top">
+                                <ImageView n1:layout_gravity="bottom" n1:id="@+id/RighthimageView" n1:layout_width="@dimen/ledprogress_lefttag_size" n1:layout_height="@dimen/ledprogress_lefttag_size" n1:src="@drawable/sunlight_12" />
+                                <com.example.wifizhilian.view.LineProgressObj n1:id="@+id/BluelineProgress" n1:paddingLeft="10.0dip" n1:paddingRight="10.0dip" n1:layout_width="wrap_content" n1:layout_height="@dimen/ledprogress_height" n1:layout_marginLeft="10.0dip" />
+                            </LinearLayout>
+                            <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/ledprogress_margin_top">
+                                <ImageView n1:layout_gravity="bottom" n1:id="@+id/Righth03imageView" n1:layout_width="@dimen/ledprogress_lefttag_size" n1:layout_height="@dimen/ledprogress_lefttag_size" n1:src="@drawable/sunlight_13" />
+                                <com.example.wifizhilian.view.LineProgressObj n1:id="@+id/Led03LineProgress" n1:paddingLeft="10.0dip" n1:paddingRight="10.0dip" n1:layout_width="wrap_content" n1:layout_height="@dimen/ledprogress_height" n1:layout_marginLeft="10.0dip" />
+                            </LinearLayout>
+                            <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/ledprogress_margin_top">
+                                <ImageView n1:layout_gravity="bottom" n1:id="@+id/Righth04imageView" n1:layout_width="@dimen/ledprogress_lefttag_size" n1:layout_height="@dimen/ledprogress_lefttag_size" n1:src="@drawable/sunlight_14" />
+                                <com.example.wifizhilian.view.LineProgressObj n1:id="@+id/Led04LineProgress" n1:paddingLeft="10.0dip" n1:paddingRight="10.0dip" n1:layout_width="wrap_content" n1:layout_height="@dimen/ledprogress_height" n1:layout_marginLeft="10.0dip" />
+                            </LinearLayout>
+                            <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/ledprogress_margin_top">
+                                <ImageView n1:layout_gravity="bottom" n1:id="@+id/Righth05imageView" n1:layout_width="@dimen/ledprogress_lefttag_size" n1:layout_height="@dimen/ledprogress_lefttag_size" n1:src="@drawable/sunlight_15" />
+                                <com.example.wifizhilian.view.LineProgressObj n1:id="@+id/Led05LineProgress" n1:paddingLeft="10.0dip" n1:paddingRight="10.0dip" n1:layout_width="wrap_content" n1:layout_height="@dimen/ledprogress_height" n1:layout_marginLeft="10.0dip" />
+                            </LinearLayout>
+                            <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/ledprogress_margin_top">
+                                <ImageView n1:layout_gravity="bottom" n1:id="@+id/Righth06imageView" n1:layout_width="@dimen/ledprogress_lefttag_size" n1:layout_height="@dimen/ledprogress_lefttag_size" n1:src="@drawable/sunlight_16" />
+                                <com.example.wifizhilian.view.LineProgressObj n1:id="@+id/Led06LineProgress" n1:paddingLeft="10.0dip" n1:paddingRight="10.0dip" n1:layout_width="wrap_content" n1:layout_height="@dimen/ledprogress_height" n1:layout_marginLeft="10.0dip" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout n1:orientation="vertical" n1:id="@+id/ModeProgressLayout" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="100.0dip">
+                            <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                                <ImageView n1:layout_gravity="bottom" n1:id="@+id/ModeLeftimageView" n1:layout_width="@dimen/ledprogress_lefttag_size" n1:layout_height="@dimen/ledprogress_lefttag_size" n1:src="@drawable/sunlight_2" />
+                                <com.example.wifizhilian.view.LineProgressObj n1:id="@+id/ModelineProgress" n1:paddingLeft="10.0dip" n1:paddingRight="10.0dip" n1:layout_width="wrap_content" n1:layout_height="@dimen/ledprogress_height" n1:layout_marginLeft="10.0dip" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <TextView n1:textColor="@android:color/holo_red_light" n1:gravity="center_horizontal" n1:id="@+id/textView" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/msg_manual_adjust" n1:layout_weight="1.0" n1:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout n1:orientation="vertical" n1:id="@+id/widget_layout_two" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                    <com.example.wifizhilian.view.SlideListView n1:id="@+id/TwoslideListView" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+                </LinearLayout>
+                <LinearLayout n1:orientation="vertical" n1:id="@+id/widget_layout_four" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                    <com.example.wifizhilian.view.SlideListView n1:id="@+id/FourslideListView" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+                </LinearLayout>
+                <LinearLayout n1:orientation="vertical" n1:id="@+id/widget_layout_five" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingTop="@dimen/activity_vertical_margin" n1:paddingRight="@dimen/activity_horizontal_margin" n1:paddingBottom="@dimen/activity_vertical_margin" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                        <TextView n1:textSize="@dimen/settitle_font_size" n1:id="@+id/textView21" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/lable_devset_name" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+                        <EditText n1:textSize="@dimen/input_font_size" n1:id="@+id/DevNameeditText" n1:layout_width="wrap_content" n1:layout_height="@dimen/input_box_height" n1:ems="10" n1:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                    <Button n1:id="@+id/SaveExtbutton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:text="@string/bnt_submit" n1:onClick="BntClick" style="?android:buttonStyleSmall" />
+                    <Button n1:id="@+id/UnHerBindbutton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:text="@string/bnt_unbind_her" n1:onClick="BntClick" style="?android:buttonStyleSmall" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

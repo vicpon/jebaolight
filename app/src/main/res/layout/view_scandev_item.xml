@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/devlist_item_tbmargin" n1:layout_marginBottom="@dimen/devlist_item_tbmargin" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true">
+        <ImageView n1:id="@+id/APIconimageView" n1:layout_width="@dimen/dev_icon_size" n1:layout_height="@dimen/dev_icon_size" n1:layout_marginLeft="@dimen/view_updown_padd" n1:src="@drawable/dong" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+        <TextView n1:textSize="@dimen/dev_title_fsize" n1:id="@+id/TitletextView" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/view_updown_padd" n1:text="Large Text" n1:layout_toRightOf="@+id/APIconimageView" n1:layout_alignTop="@+id/APIconimageView" />
+        <TextView n1:textSize="@dimen/dev_info_fsize" n1:id="@+id/InfotextView" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="TextView" n1:layout_alignLeft="@+id/TitletextView" n1:layout_alignBottom="@+id/APIconimageView" />
+        <ImageView n1:id="@+id/OptionimageView" n1:clickable="true" n1:layout_width="@dimen/option_scanicon_size" n1:layout_height="@dimen/option_scanicon_size" n1:layout_marginRight="10.0dip" n1:src="@drawable/add_2" n1:layout_alignTop="@+id/OptionTwoimageView" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+        <ImageView n1:id="@+id/OptionTwoimageView" n1:clickable="true" n1:layout_width="@dimen/option_scanicon_size" n1:layout_height="@dimen/option_scanicon_size" n1:layout_marginRight="10.0dip" n1:src="@drawable/unbind" n1:layout_toLeftOf="@+id/OptionimageView" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

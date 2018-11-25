@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingTop="@dimen/activity_vertical_margin" n1:paddingRight="@dimen/activity_horizontal_margin" n1:paddingBottom="@dimen/activity_vertical_margin" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@+id/LogoimageView" n1:layout_width="@dimen/login_logo_size" n1:layout_height="@dimen/login_logo_size" n1:layout_marginTop="@dimen/login_updown_padd" n1:layout_marginBottom="@dimen/login_updown_padd" n1:src="@drawable/ic_launcher" n1:layout_alignParentTop="true" n1:layout_centerHorizontal="true" />
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@+id/LogoimageView" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true">
+        <TextView n1:textAppearance="?android:textAppearanceLarge" n1:textSize="@dimen/login_lable_fontsize" n1:id="@+id/DaytextView" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/lable_login_username" />
+        <EditText n1:id="@+id/AccounteditText" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:singleLine="true">
+            <requestFocus />
+        </EditText>
+        <TextView n1:textAppearance="?android:textAppearanceLarge" n1:textSize="@dimen/login_lable_fontsize" n1:id="@+id/PasswordtextView" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/lable_login_password" />
+        <EditText n1:id="@+id/PasswordeditText" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:singleLine="true" n1:inputType="textPassword" />
+        <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <CheckBox n1:textSize="@dimen/login_lable_fontsize" n1:id="@+id/RemembercheckBox" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/lable_login_remember" n1:layout_weight="0.5" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+            <TextView n1:textAppearance="?android:textAppearanceLarge" n1:textSize="@dimen/login_lable_fontsize" n1:id="@+id/FindPasstextView" n1:clickable="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/lable_login_findpass" n1:layout_weight="0.5" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n1:onClick="BntClick" />
+        </RelativeLayout>
+        <Button n1:textSize="@dimen/bnt_font_size" n1:id="@+id/Loginbutton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/bnt_login_login" n1:onClick="BntClick" />
+        <Button n1:textSize="@dimen/bnt_font_size" n1:id="@+id/Regeditbutton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/bnt_login_regedit" n1:onClick="BntClick" />
+    </LinearLayout>
+</RelativeLayout>

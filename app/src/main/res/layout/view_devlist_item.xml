@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/devlist_item_tbmargin" n1:layout_marginBottom="@dimen/devlist_item_tbmargin" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true">
+        <ImageView n1:id="@+id/APIconimageView" n1:layout_width="@dimen/dev_icon_size" n1:layout_height="@dimen/dev_icon_size" n1:layout_marginLeft="@dimen/view_updown_padd" n1:src="@drawable/dong" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+        <ImageView n1:id="@+id/OptionimageView" n1:clickable="true" n1:layout_width="@dimen/option_icon_size" n1:layout_height="@dimen/option_icon_size" n1:layout_marginRight="@dimen/view_updown_padd" n1:src="@drawable/icon_online" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+        <LinearLayout n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true">
+            <TextView n1:textSize="@dimen/dev_title_fsize" n1:layout_gravity="center_horizontal" n1:id="@+id/TitletextView" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Large Text" />
+            <ImageView n1:layout_gravity="center_horizontal" n1:id="@+id/TabBntIconimageView" n1:layout_width="@dimen/underline_width" n1:layout_height="wrap_content" n1:src="@drawable/underline" />
+            <TextView n1:textSize="@dimen/dev_info_fsize" n1:id="@+id/InfotextView" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/view_updown_padd" n1:text=" " />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

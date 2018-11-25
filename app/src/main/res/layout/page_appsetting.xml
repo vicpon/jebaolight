@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.example.wifizhilian.view.PageHead android:id="@+id/AppSettingpageHead" android:layout_width="fill_parent" android:layout_height="@dimen/pagehead_height" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@+id/MenuItemtextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lable_login_remember" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <CheckBox android:id="@+id/SetRemembercheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@+id/TimetextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lable_login_auto" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <CheckBox android:id="@+id/SetAutocheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lable_appinfo_ver" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@+id/AppVertextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="0.0" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <Button android:id="@+id/UpdateAppbutton" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/lable_appinfo_update" />
+    </LinearLayout>
+</LinearLayout>

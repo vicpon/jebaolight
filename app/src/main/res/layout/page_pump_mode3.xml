@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="20.0dip">
+        <com.example.wifizhilian.view.SingShowView n1:id="@+id/ModethreeSingShowView" n1:background="#ffffffff" n1:layout_width="fill_parent" n1:layout_height="@dimen/pumpgraphic_height" />
+        <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:layout_gravity="center_vertical" n1:id="@+id/ModethreeFlowNametextView" n1:layout_width="80.0dip" n1:layout_height="wrap_content" n1:text="@string/lable_pumpstr_flow" />
+            <com.example.wifizhilian.view.LineProgressObj n1:id="@+id/ModethreeFlowProgress" n1:paddingLeft="10.0dip" n1:paddingRight="10.0dip" n1:layout_width="fill_parent" n1:layout_height="@dimen/ledprogress_height" />
+        </LinearLayout>
+        <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="20.0dip">
+            <TextView n1:layout_gravity="center_vertical" n1:id="@+id/ModethreeFreqNametextView" n1:layout_width="80.0dip" n1:layout_height="wrap_content" n1:text="@string/lable_pumpstr_frequency" />
+            <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <com.example.wifizhilian.view.LineProgressObj n1:id="@+id/ModethreeFreqProgress" n1:paddingLeft="10.0dip" n1:paddingRight="10.0dip" n1:layout_width="fill_parent" n1:layout_height="@dimen/ledprogress_height" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

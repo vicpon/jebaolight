@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.example.wifizhilian.view.PageHead android:id="@+id/LedTwoSetpageHead" android:layout_width="fill_parent" android:layout_height="@dimen/pagehead_height" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/date_font_size" android:layout_gravity="center_horizontal" android:id="@+id/DatetextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="TextView" />
+        <TextView android:textSize="@dimen/time_font_size" android:textColor="#ff33cc33" android:layout_gravity="center_horizontal" android:id="@+id/TimetextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="TextView" />
+        <LinearLayout android:background="#ff99e699" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/genborder_padding_margin">
+        <Button android:textColor="@color/white" android:id="@+id/button_Reserve1" android:background="@color/green" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/lable_bnt_reserve1" android:layout_weight="1.0" android:onClick="BntClick" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/LeftimageView" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_left" android:onClick="BntClick" />
+        <RelativeLayout android:layout_width="@dimen/day_textview_width" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/SmallimageView" android:layout_width="wrap_content" android:layout_height="@dimen/small_logo_size" android:src="@drawable/quick_set_small" android:scaleType="fitCenter" />
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/RighthimageView" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_right" android:onClick="BntClick" />
+        <Button android:textColor="@color/white" android:id="@+id/button_Reserve2" android:background="@color/green" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/lable_bnt_reserve2" android:layout_weight="1.0" android:onClick="BntClick" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_gravity="center_horizontal" android:id="@+id/DaytextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Large Text" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/LineGraphicLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.example.wifizhilian.view.LineGraphicView android:id="@+id/SetlineGraphicView" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="@dimen/linegraphic_height" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/genborder_padding_margin">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.5">
+            <Button android:layout_gravity="center_horizontal" android:id="@+id/Savebutton" android:background="@drawable/bnt_bg1" android:layout_width="@dimen/bnt_twop_width" android:layout_height="@dimen/bnt_twop_height" android:text="@string/bnt_submit" android:onClick="BntClick" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.5">
+            <Button android:layout_gravity="center_horizontal" android:id="@+id/Runbutton" android:background="@drawable/bnt_bg1" android:layout_width="@dimen/bnt_twop_width" android:layout_height="@dimen/bnt_twop_height" android:text="@string/bnt_run" android:onClick="BntClick" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.5">
+            <Button android:layout_gravity="center_horizontal" android:id="@+id/Deletebutton" android:background="@drawable/bnt_bg2" android:layout_width="@dimen/bnt_twop_width" android:layout_height="@dimen/bnt_twop_height" android:text="@string/bnt_delete" android:onClick="BntClick" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
