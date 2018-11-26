@@ -1336,7 +1336,7 @@
     </style>
     <style name="com_facebook_button" parent="@android:style/Widget.Button">
         <item name="android:textSize">14.0dip</item>
-        <item name="android:textColor">@color/com_facebook_blue</item>
+        <item name="android:textColor">@color/com_facebook_button_text_color</item>
         <item name="android:gravity">center</item>
         <item name="android:background">@drawable/com_facebook_button_background</item>
         <item name="android:paddingLeft">8.0dip</item>
